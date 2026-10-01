@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Fraunces:ital,wght@0,700;0,900;1,700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-pink-brand: #e91e8c;
+  --color-pink-light: #fce4f3;
+  --color-pink-mid: #f48fb1;
+  --color-pink-deep: #c2185b;
+  --color-surface: #fff9fc;
+  --font-sans: 'Nunito', sans-serif;
+  --font-display: 'Fraunces', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #fff9fc;
+  color: #1a1a2e;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #fce4f3; }
+::-webkit-scrollbar-thumb { background: #e91e8c; border-radius: 4px; }
+
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
